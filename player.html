@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>PladForm</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon"  href="/favicon-128.png" />
+
+    <script type="text/javascript" src="js/es5-shim.js"></script>
+    <script type="text/javascript" src="http://s0.2mdn.net/instream/html5/ima3_debug.js"></script>
+    <script src="js/application.js?ver=7" type="text/javascript"></script>
+    <script src="js/ads.js?ver=6" type="text/javascript"></script>
+    <script src="js/video_player.js?ver=6" type="text/javascript"></script>
+    <link href="css/html5.css?ver=6" rel="stylesheet" type="text/css">
+
+</head>
+
+  <body style="margin:0px !important;">
+        
+    <div id="videoplayer">
+      <video id="content" src="http://cdn.test.pladform.ru/video/1936/test3.mp4?md5=2HmC59IFlpkkKX_UPiCoTA&expires=1422294798"></video>
+      <div id="adcontainer"></div>
+
+      <div id="adTimeRemaining"></div>
+      <div id="controlls">
+          <button id="playpause" title="Play/Pause">&#9654;</button>
+          <button id="replay" title="Replay">&#8634;</button>
+          <div id="timevideo"></div>
+          <div class="mobHide" id="volume" title="Volume"><span><div></div></span></div>
+          <button id="fullscreen" title="Full screen">[&nbsp;&nbsp;&nbsp;]</button>
+          <div id="progressBar"><span></span></div>
+      </div>
+    </div>
+
+    <div id="console">
+        Консоль событий
+    </div>    
+    <!-- Declare a div where you want the companion to appear. Use
+          googletag.display() to make sure the ad is displayed. -->
+    <div id="companionDiv">
+      <script type="text/javascript">
+        // Using the command queue to enable asynchronous loading.
+        // The unit will not actually display now - it will display when
+        // the video player is displaying the ads.
+        //googletag.cmd.push(function() { googletag.display('companionDiv'); });
+      </script>
+    </div>        
+
+<script type="text/javascript">
+      var application = null;
+      window.onload = function(){
+            
+    	    application = new Application();
+            
+            if (application.videoPlayer_.detectMobilePlatform()) {
+            	application.videoPlayer_.hideMobileControlls();
+            	var obj = application.videoPlayer_.detectScreenSize();
+            	
+            	//application.videoPlayer_.videoPlayerContainer_.style.width = window.innerWidth + 'px';
+            	//alert(application.videoPlayer_.videoPlayerContainer_.offsetWidth + ' - ' + obj.width);
+            	//window.orientation = 90;
+            	
+            }
+                    
+      };
+</script>
+
+</body>
+</html>

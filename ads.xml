@@ -1,0 +1,22 @@
+<Playlist>
+<Preroll>
+<Ad>
+<![CDATA[http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2]]></Ad>
+</Preroll>
+<Midroll timeOffset="00:00:30">
+<Ad>
+<![CDATA[http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2]]></Ad>
+</Midroll>
+<Midroll timeOffset="00:01:00">
+<Ad>
+<![CDATA[http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2]]></Ad>
+</Midroll>
+<Midroll timeOffset="00:01:30">
+<Ad>
+<![CDATA[http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2]]></Ad>
+</Midroll>
+<Postroll>
+<Ad>
+<![CDATA[http://ad3.liverail.com/?LR_PUBLISHER_ID=1331&LR_CAMPAIGN_ID=229&LR_SCHEMA=vast2]]></Ad>
+</Postroll>
+</Playlist>

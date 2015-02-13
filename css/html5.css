@@ -1,0 +1,211 @@
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 728px;
+}
+
+#videoplayer {
+  position: relative;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.95);
+  border: 2px #ccc solid;
+  width: 640px;
+  height: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  /*z-index:1050;*/
+}
+
+.fullscreen{
+	z-index:1050;
+	margin-top:0px !important;
+	margin-left:0px !important;
+	margin-right:0px !important;
+	margin-bottom:0px !important;
+	border:0px !important;
+}
+
+.fullscreen #playpause,
+.fullscreen #fullscreen,
+.fullscreen #progressBar{
+	margin-bottom:40px;
+}
+
+/*.fullscreen #playpause{
+    left:35%;
+}
+.fullscreen #fullscreen{
+    right:35%;
+}*/
+
+#content-wrapper {
+  position:relative;
+  top: 0px;
+  left: 0px
+}
+
+#playpause, #replay {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  height: 40px;
+  width: 100px;
+  border-style: none;
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 0.5;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px transparent solid;
+  color: #000;
+  cursor: pointer;
+  line-height: 0;
+}
+
+#volume {
+	position:absolute;
+	left:220px;
+	bottom:20px;
+	width:100px;
+	border:1px solid #fff;
+	opacity:0.7;
+	height:20px;
+	cursor:default;
+	padding:1px;
+}
+
+.fullscreen>#controlls>#volume{
+	left:0px;
+	top:0px;
+	width:99%;
+}
+
+#volume > span {
+display:block;
+	width:100%;
+	height:100%;
+}
+#volume > span > div {
+	background-color:#ffffff;
+    width:100%;
+    height:100%;
+}
+#timevideo {
+	position:absolute;
+	left:130px;
+	bottom:20px;
+	color:#fff;
+}
+
+#replay {
+  display: none;
+}
+
+#playpause:hover, #replay:hover {
+  border: 1px #f00 solid;
+  color: #f00;
+}
+
+#fullscreen {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 100px;
+  border-style: none;
+  font-weight: bold;
+  font-size: 25px;
+  opacity: 0.5;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px transparent solid;
+  color: #000;
+  cursor: pointer;
+  line-height: 0;
+}
+
+#progressBar{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:13px;
+    opacity:0.7;
+    background-color:#666;	
+}
+#progressBar>span{
+	width:100%;
+	background:#fff;
+	height:100%;
+	display:block;
+}
+
+#fullscreen:hover {
+  border: 1px #f00 solid;
+  color: #f00;
+}
+
+#content {
+  overflow: hidden;
+}
+
+#content, #adcontainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 640px;
+  height: 360px;
+}
+#adTimeRemaining {
+	position:absolute;
+	right:5px;
+	top:30px;
+	color:yellow;
+	width:300px;
+	height:25px;
+	text-align:right;
+	padding-right:6px;
+}
+
+#playlistDiv {
+  height: 122px;
+  width: 224px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.playlistItem {
+  height: 122px;
+  width: 102px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.playlistImg {
+  border: 1px solid;
+}
+
+#console {
+  font-family: courier, monospace;
+  font-size: 12px;
+  margin-top: 20px;
+  height: 200px;
+  width: 630px;
+  padding: 5px;
+  border: 1px #ccc solid;
+  overflow-y: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#companionDiv {
+  width: 728px;
+  height: 90px;
+  margin-top: 20px;
+}
